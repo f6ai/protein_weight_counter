@@ -34,5 +34,5 @@ for line in infile:
     line.strip()
     protein_sum += count_weights(line)
 print (protein_sum)
-print('OK')
+
 infile.close()
