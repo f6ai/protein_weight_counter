@@ -27,12 +27,13 @@ def count_weights(string):
     return summa
 
 
-infile = open('protein_weight_counter_input.txt', 'r')
+if __name__ == "__main__":
+    infile = open('protein_weight_counter_input.txt', 'r')
 
-protein_sum = 0
-for line in infile:
-    line.strip()
-    protein_sum += count_weights(line)
-print (protein_sum)
+    protein_sum = 0
+    for line in infile:
+        line.strip()
+        protein_sum += count_weights(line)
+    print (protein_sum)
 
-infile.close()
+    infile.close()
